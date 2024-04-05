@@ -30,7 +30,7 @@ def loginUser():
      connection = mysql.connector.connect(host="localhost", database="waterbillingsystem", user="root", password="")
      if(connection):
         print("database successfully established")
-     query = "SELECT * FROM login WHERE UserName=%s AND UserPassword=%s"
+     query = "SELECT * FROM user_login WHERE UserName=%s AND UserPassword=%s"
      data = (userName, password)
      c = connection.cursor()
      c.execute(query, data)
