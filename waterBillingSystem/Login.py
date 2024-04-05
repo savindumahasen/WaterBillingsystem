@@ -7,6 +7,7 @@ import mysql.connector
 
 login = Tk()
 login.title("Login")
+login.resizable(False, False)
 login.geometry("400x300+600+150")
 
 label1 = Label(login, text="UserName")
